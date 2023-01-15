@@ -11,7 +11,7 @@ The following technologies are required:
 
 # Usage
 ```JavaScript
-import { scoreCollection } from "./scores";
+import { scoreCollection } from "openrarity-js";
 
 scoreCollection([
   {
