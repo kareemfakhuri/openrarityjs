@@ -1,5 +1,10 @@
 import { spawn } from "child_process";
-import { METADATA_PATH, SCORES_PATH, SCRIPT_PATH } from "./constants";
+import {
+  BASE_PATH,
+  METADATA_PATH,
+  SCORES_PATH,
+  SCRIPT_PATH,
+} from "./constants";
 import { clearDumps, dumpMetadata, readScores } from "./dump";
 import { TokenMetadata, TokenScore } from "./types";
 import { wait } from "./utils/async-utils";
@@ -15,13 +20,11 @@ export async function scoreCollection(
   }
 
   // Pass dump file path to script
-  const subprocess = spawn(`poetry`, [
-    "run",
-    "python",
-    SCRIPT_PATH,
-    METADATA_PATH,
-    SCORES_PATH,
-  ]);
+  const subprocess = spawn(
+    `poetry`,
+    ["run", "python", SCRIPT_PATH, METADATA_PATH, SCORES_PATH],
+    { cwd: BASE_PATH }
+  );
 
   let done = false;
   subprocess.stdout.on("close", function () {
