@@ -22,6 +22,8 @@
   },
   "files": [
     "lib",
-    "scripts"
+    "scripts",
+    "pyproject.toml",
+    "poetry.lock"
   ]
 }
