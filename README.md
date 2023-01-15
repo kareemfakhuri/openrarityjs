@@ -13,7 +13,7 @@ The following technologies are required:
 ```JavaScript
 import { scoreCollection } from "openrarityjs";
 
-scoreCollection([
+const scores = scoreCollection([
   {
     tokenID: "0",
     traits: [
@@ -35,9 +35,9 @@ scoreCollection([
       { type: "Accessory", value: "Coffee Cup" },
     ],
   },
-]).then((scores) => {
-  console.log(JSON.stringify(scores, null, 2));
-});
+])
+
+console.log(JSON.stringify(scores, null, 2));
 ```
 Output:
 ```
