@@ -1,5 +1,5 @@
 {
-  "name": "openrarity-js",
+  "name": "openrarityjs",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kareemfakhuri/openrarity-js.git"
+    "url": "git+https://github.com/kareemfakhuri/openrarityjs.git"
   },
   "author": "kareemfakhuri",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kareemfakhuri/openrarity-js/issues"
+    "url": "https://github.com/kareemfakhuri/openrarityjs/issues"
   },
-  "homepage": "https://github.com/kareemfakhuri/openrarity-js#readme",
+  "homepage": "https://github.com/kareemfakhuri/openrarityjs#readme",
   "devDependencies": {
     "@types/node": "^18.11.18"
   }

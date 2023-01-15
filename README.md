@@ -1,4 +1,4 @@
-﻿# openrarity-js
+﻿# openrarityjs
 A NodeJS wrapper for OpenRarity (v0.7.1).
 
 # Project Build & Setup Requirements
@@ -11,7 +11,7 @@ The following technologies are required:
 
 # Usage
 ```JavaScript
-import { scoreCollection } from "openrarity-js";
+import { scoreCollection } from "openrarityjs";
 
 scoreCollection([
   {
