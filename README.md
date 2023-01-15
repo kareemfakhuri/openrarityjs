@@ -6,7 +6,7 @@ A NodeJS wrapper for OpenRarity (v0.7.1).
 This project was built against NodeJS 16.11.0.
 
 The following technologies are required:
-- Python ≥ 3.10 < 3.12
+- Python ≥ 3.10, < 3.12
 - Poetry
 
 # Usage
