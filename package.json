@@ -1,9 +1,10 @@
 {
-  "name": "openrarity",
+  "name": "openrarity-js",
   "version": "1.0.0",
   "description": "",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "poetry install && tsc"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kareemfakhuri/openrarity-js/issues"
   },
-  "homepage": "https://github.com/kareemfakhuri/openrarity-js#readme"
+  "homepage": "https://github.com/kareemfakhuri/openrarity-js#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
 }
