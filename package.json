@@ -1,8 +1,9 @@
 {
   "name": "openrarityjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "poetry install && tsc"
   },
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/kareemfakhuri/openrarityjs#readme",
   "devDependencies": {
     "@types/node": "^18.11.18"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
