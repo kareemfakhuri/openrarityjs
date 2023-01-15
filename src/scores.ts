@@ -7,11 +7,10 @@ import {
 } from "./constants";
 import { clearDumps, dumpMetadata, readScores } from "./dump";
 import { TokenMetadata, TokenScore } from "./types";
-import { wait } from "./utils/async-utils";
 
-export async function scoreCollection(
+export function scoreCollection(
   metadata: TokenMetadata[]
-): Promise<TokenScore[] | null> {
+): TokenScore[] | null {
   try {
     dumpMetadata(metadata);
   } catch (error: any) {
