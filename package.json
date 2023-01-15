@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "poetry install && tsc"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

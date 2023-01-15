@@ -1,4 +1,4 @@
-import { spawn } from "child_process";
+import { spawnSync } from "child_process";
 import {
   BASE_PATH,
   METADATA_PATH,
@@ -19,22 +19,12 @@ export async function scoreCollection(
     return null;
   }
 
-  // Pass dump file path to script
-  const subprocess = spawn(
+  // Run script sync to ensure execution
+  spawnSync(
     `poetry`,
     ["run", "python", SCRIPT_PATH, METADATA_PATH, SCORES_PATH],
     { cwd: BASE_PATH }
   );
-
-  let done = false;
-  subprocess.stdout.on("close", function () {
-    done = true;
-  });
-
-  // Wait till script is fully executed
-  while (!done) {
-    await wait(25);
-  }
 
   let scores: TokenScore[];
   try {
