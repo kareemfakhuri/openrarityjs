@@ -40,7 +40,7 @@ const scores = scoreCollection([
       { type: "Accessory", value: "Coffee Cup" },
     ],
   },
-])
+]);
 
 console.log(JSON.stringify(scores, null, 2));
 ```
