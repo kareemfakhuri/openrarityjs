@@ -20,7 +20,7 @@
     "url": "git+https://github.com/kareemfakhuri/openrarityjs.git"
   },
   "author": "kareemfakhuri",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kareemfakhuri/openrarityjs/issues"
   },
