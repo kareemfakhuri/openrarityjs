@@ -2,6 +2,14 @@
   "name": "openrarityjs",
   "version": "1.0.8",
   "description": "",
+  "keywords": [
+    "openrarity",
+    "js",
+    "javascript",
+    "nft",
+    "rarity",
+    "ethereum"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
