@@ -22,7 +22,7 @@ export function scoreCollection(
   spawnSync(
     `poetry`,
     ["run", "python", SCRIPT_PATH, METADATA_PATH, SCORES_PATH],
-    { cwd: BASE_PATH }
+    { cwd: BASE_PATH, stdio: ["inherit", "inherit", "inherit"] }
   );
 
   let scores: TokenScore[];
